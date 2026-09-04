@@ -5,7 +5,7 @@ devices, and IP addresses as a connected graph — and showing that these
 network relationships improve fraud detection beyond what transaction data
 alone can reveal.
 
-![Fraud ring visualization](outputs/fraud_ring_visual_screenshot.png)
+![fraud-ring-detection](fraud_ring_visual_screenshot.png)
 *Red = accounts in a detected fraud ring · Gray = shared device/IP linking them · Blue = other connected accounts*
 
 ## The Problem
@@ -71,7 +71,7 @@ by swapping the data-loading step.
 *(Run the notebook's model comparison cell and drop your printed numbers in
 above — this table is the single most important result in this repo.)*
 
-![Precision-Recall comparison](outputs/pr_curve_comparison.png)
+![fraud-ring-detection](pr_curve_comparison.png)
 
 The graph-augmented model's precision-recall curve sits above the
 baseline's across most of the recall range, meaning: **at the same false
@@ -113,7 +113,8 @@ Google Colab (execution environment, no local setup required)
 
 ## Files in this repo
 
-- `fraud_ring_detection.ipynb` — full, runnable notebook
-- `outputs/pr_curve_comparison.png` — baseline vs. graph-augmented model comparison
-- `outputs/feature_importance.png` — which features drove the graph-augmented model
-- `outputs/fraud_ring_visual.html` — interactive visualization of a detected ring
+- `Fraud_ring_detection.ipynb` — full, runnable notebook
+- `pr_curve_comparison.png` — baseline vs. graph-augmented model comparison
+- `feature_importance.png` — which features drove the graph-augmented model
+- `fraud_ring_visual_screenshot.png` — Final graph 
+- `fraud_ring_visual.html` — interactive visualization of a detected ring
